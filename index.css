@@ -1,3 +1,31 @@
 body {
     background-color: #16202b;
 }
+
+.nav-link {
+    /* specify color of text and svg */
+    color: white;
+    /* remove link styling */
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    height: 24px;
+}
+
+.nav-link svg {
+    height: 24px;
+    width: 24px;
+}
+
+.nav-link-container div {
+    /* matches the height if the svg to center text vertically */ 
+    line-height: 24px;
+    margin-left: 15px;
+}
+
+.nav-link-container {
+    /* makes the elements flow left to right instead of top to bottom within the container */
+    display: flex;
+    flex-direction: row;
+}
