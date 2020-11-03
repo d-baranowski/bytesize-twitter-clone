@@ -2,9 +2,17 @@ body {
     background-color: #16202b;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-link {
+    transition: color 200ms, background-color 200ms;
+    border-radius: 25px;
+    width: max-content; /* prevents link from growing bigger then it's content */
     margin: 10px;
-    padding: 5px;
+    padding: 13px;
     /* specify color of text and svg */
     color: white;
     /* remove link styling */
@@ -15,15 +23,26 @@ body {
     height: 24px;
 }
 
+.nav-link:hover {
+    background-color: #1b3041;
+    color: #20a1f1;
+}
+
 .nav-link svg {
     height: 24px;
     width: 24px;
 }
 
 .nav-link-container div {
-    /* matches the height if the svg to center text vertically */ 
+    /* matches the height if the svg to center text vertically */
     line-height: 24px;
     margin-left: 15px;
+}
+
+@media (max-width: 1264px) {
+    .nav-link-container div {
+        display: none;
+    }
 }
 
 .nav-link-container {
