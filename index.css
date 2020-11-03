@@ -1,5 +1,6 @@
 body {
     background-color: #16202b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
 nav {
@@ -17,7 +18,6 @@ nav {
     color: white;
     /* remove link styling */
     text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     font-size: 19px;
     font-weight: 700;
     height: 24px;
@@ -49,4 +49,27 @@ nav {
     /* makes the elements flow left to right instead of top to bottom within the container */
     display: flex;
     flex-direction: row;
+}
+
+.tweet-button {
+    transition: background-color 200ms;
+    background-color: #35a1f2;
+    padding: 13px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 230px;
+    border-radius: 25px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    height: 47px;
+}
+
+.tweet-button:hover {
+    background-color: #4c8fd4;
+}
+
+.logo:hover {
+    color: white;
 }
